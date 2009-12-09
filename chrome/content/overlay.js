@@ -18,4 +18,4 @@ var PrefsNotTools = {
   }
 };
 
-window.addEventListener("load", PrefsNotTools.onLoad, false);
+window.addEventListener("load", function(e) { PrefsNotTools.onLoad(e); }, false);

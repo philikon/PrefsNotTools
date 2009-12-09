@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://prefsnottools/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://prefsnottools/locale/overlay.dtd">
+<overlay id="PrefsNotTools-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="PrefsNotTools-strings"
+                  src="chrome://prefsnottools/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <menupopup id="taskPopup">
+    <menuitem id="PrefsNotTools-hello" label="&PrefsNotTools.label;" 
+              oncommand="PrefsNotTools.onMenuItemCommand(event);"/>
+  </menupopup>
+</overlay>
