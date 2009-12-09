@@ -6,3 +6,5 @@
 <!ENTITY PrefsNotToolsSidebar.label "Your Sidebar">
 <!ENTITY PrefsNotToolsToolbar.name  "example">
 <!ENTITY PrefsNotToolsToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &PrefsNotToolsToolbar.name;">
+
+<!ENTITY paneAccounts.title "Accounts">
