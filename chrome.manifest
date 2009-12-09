@@ -1,0 +1,4 @@
+content   PrefsNotTools                 chrome/content/
+skin      PrefsNotTools   classic/1.0   chrome/skin/
+locale    PrefsNotTools   en-US         chrome/locale/en-US/
+
