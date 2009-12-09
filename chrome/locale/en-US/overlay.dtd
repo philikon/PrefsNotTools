@@ -1,10 +1,1 @@
-<!ENTITY PrefsNotTools.label "Your localized menuitem">
-<!ENTITY PrefsNotToolsContext.label "Your Menuitem">
-<!ENTITY PrefsNotToolsContext.accesskey "Y">
-<!ENTITY PrefsNotToolsToolbarButton.label "Your Toolbar Button">
-<!ENTITY PrefsNotToolsToolbarButton.tooltip "This is your toolbar button!">
-<!ENTITY PrefsNotToolsSidebar.label "Your Sidebar">
-<!ENTITY PrefsNotToolsToolbar.name  "example">
-<!ENTITY PrefsNotToolsToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &PrefsNotToolsToolbar.name;">
-
 <!ENTITY paneAccounts.title "Accounts">
