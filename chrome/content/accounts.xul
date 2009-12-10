@@ -12,8 +12,17 @@
   <prefwindow id="MailPreferences">
     <prefpane id="paneAccounts" insertbefore="paneDisplay"
               label="&paneAccounts.title;"
-              onpaneload="onLoad()">
+              onpaneload="onLoad()"> <!-- XXX TODO onunload??? -->
 
+
+<!-- The following lines are taken nearly verbatimly from
+     comm-central/mailnews/base/prefs/content/AccountManager.xul.
+     Obviously code duplication is less than idea, but I know of no
+     other way for now.
+
+     Another problem is that the AccountManager JavaScript code
+     assumes it reigns the <window> so we just have to hope that there
+     are no naming clashes with other global XUL code :/ -->
 
 <stringbundle id="bundle_brand" src="chrome://branding/locale/brand.properties"/>
 <stringbundle id="bundle_prefs" src="chrome://messenger/locale/prefs.properties"/>
