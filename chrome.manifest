@@ -2,5 +2,5 @@ content   PrefsNotTools                 chrome/content/
 skin      PrefsNotTools   classic/1.0   chrome/skin/
 locale    PrefsNotTools   en-US         chrome/locale/en-US/
 overlay   chrome://messenger/content/messenger.xul chrome://prefsnottools/content/menu.xul
-overlay   chrome://messenger/content/preferences/preferences.xul chrome://prefsnottools/content/preferences.xul
+overlay   chrome://messenger/content/preferences/preferences.xul chrome://prefsnottools/content/accounts.xul
 
