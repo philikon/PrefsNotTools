@@ -65,6 +65,10 @@
     <iframe id="contentFrame" name="contentFrame" flex="1"/>
   </hbox>
 
+  <button id="accountAcceptButton"
+          label="Save"
+          oncommand="onAccept();" />
+
     </prefpane>
   </prefwindow>
 
