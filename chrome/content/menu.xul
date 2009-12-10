@@ -3,8 +3,8 @@
 <overlay id="PrefsNotTools-menu-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <menupopup id="taskPopup">
-    <!-- Remove the menu items we make unnecessary
+    <!-- Remove the menu items we make unnecessary -->
     <menuitem id="menu_accountmgr" removeelement="true" />
-    <menuseparator id="prefSep" removeelement="true" /-->
+    <menuseparator id="prefSep" removeelement="true" />
   </menupopup>
 </overlay>
