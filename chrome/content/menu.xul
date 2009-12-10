@@ -4,7 +4,8 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <menupopup id="taskPopup">
     <!-- Remove the menu items we make unnecessary -->
-    <menuitem id="menu_accountmgr" removeelement="true" />
+    <menuitem id="addonsManager" removeelement="true" />
     <menuseparator id="prefSep" removeelement="true" />
+    <menuitem id="menu_accountmgr" removeelement="true" />
   </menupopup>
 </overlay>

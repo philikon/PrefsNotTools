@@ -1,3 +1,7 @@
 radio[pane=paneAccounts] {
   list-style-image: url("chrome://prefsnottools/skin/account-settings.png");
 }
+
+radio[pane=paneAddons] {
+  list-style-image: url("chrome://prefsnottools/skin/addons.png");
+}

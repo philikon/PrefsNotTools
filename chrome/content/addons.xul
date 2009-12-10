@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://prefsnottools/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay [
+  <!ENTITY % extensionsDTD SYSTEM "chrome://mozapps/locale/extensions/extensions.dtd">
+  %extensionsDTD;
+  <!ENTITY % overlayDTD SYSTEM "chrome://prefsnottools/locale/overlay.dtd">
+  %overlayDTD;
+]>
+<overlay id="PrefsNotTools-addons-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <prefwindow id="MailPreferences">
+    <prefpane id="paneAddons"
+              label="&paneAddons.title;">
+
+      <iframe flex="1" style="height:&em.height;px;"
+              type="content"
+              src="chrome://mozapps/content/extensions/extensions.xul" />
+
+    </prefpane>
+  </prefwindow>
+</overlay>
