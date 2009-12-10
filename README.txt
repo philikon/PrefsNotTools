@@ -1,7 +1,13 @@
-This is a Thunderbird extension that fixes one of the many glitches in
-the Thunderbird UI: account and add-on settings aren't part of the
-general preferences dialog but instead have their own dialogs.  Even
-worse, these dialogs can't be reached with a keyboard shortcut.
+Like in many applications these days, the 'Tools' menu is a misnomer:
+it often contains essential and not just auxiliary functionality.
+Thunderbird is particularly hopeless in this respect, as it not only
+has the general 'Preferences' dialog hidden in this menu, but also the
+separate 'Account settings' and 'Add-ons' dialogs.
 
-This extension moves the contents of these dialogs into preference
-panes in the general preferences dialog
+Firstly the 'Preferences' dialog isn't a "tool" and should therefore
+not appear in this menu. Secondly, other dialogs that modify the
+application's settings should really be part of the general
+'Preferences' dialog.  That way they will also be available under the
+common shortcut for invoking the 'Preferences' dialog.
+
+This Thunderbird extension fixes all this.
