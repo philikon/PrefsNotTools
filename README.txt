@@ -11,3 +11,7 @@ application's settings should really be part of the general
 common shortcut for invoking the 'Preferences' dialog.
 
 This Thunderbird extension fixes all this.
+
+Most of the code in this extension is taken from Mozilla projects and
+(c) their contributors.  Thus this extension is released under the
+same license, the Mozilla Public License Version 1.1.
