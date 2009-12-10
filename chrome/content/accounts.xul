@@ -17,7 +17,7 @@
 
 <!-- The following lines are taken nearly verbatimly from
      comm-central/mailnews/base/prefs/content/AccountManager.xul.
-     Obviously code duplication is less than idea, but I know of no
+     Obviously code duplication is less than ideal, but I know of no
      other way for now.
 
      Another problem is that the AccountManager JavaScript code
