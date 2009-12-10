@@ -65,9 +65,19 @@
     <iframe id="contentFrame" name="contentFrame" flex="1"/>
   </hbox>
 
-  <button id="accountAcceptButton"
-          label="Save"
-          oncommand="onAccept();" />
+
+  <separator class="thin"/>
+
+  <!-- XXX TODO Ideally this button would be unnecessary, changes
+       would be saved upon leaving this prefpane and/or closing the
+       preferences dialog -->
+  <hbox align="center">
+    <spacer flex="1"/>
+    <!-- XXX TODO label, accesskey -->
+    <button id="accountAcceptButton"
+            label="Save"
+            oncommand="onAccept();" />
+  </hbox>
 
     </prefpane>
   </prefwindow>
