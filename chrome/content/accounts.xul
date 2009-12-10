@@ -10,7 +10,8 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <prefwindow id="MailPreferences">
-    <prefpane id="paneAccounts" label="&paneAccounts.title;"
+    <prefpane id="paneAccounts" insertbefore="paneDisplay"
+              label="&paneAccounts.title;"
               onpaneload="onLoad()">
 
 
