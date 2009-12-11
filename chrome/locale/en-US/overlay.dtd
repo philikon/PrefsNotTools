@@ -1,4 +1,3 @@
 <!ENTITY accountPrefsPane.size "width: 120ch; height:45em;">
-<!ENTITY accountPrefsTree.width "width: 30ch;">
 <!ENTITY paneAccounts.title "Accounts">
 <!ENTITY paneAddons.title "Add-ons">

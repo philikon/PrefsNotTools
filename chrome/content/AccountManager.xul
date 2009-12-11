@@ -2,17 +2,19 @@
 
 <?xml-stylesheet href="chrome://messenger/skin/accountManage.css" type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://messenger/locale/AccountManager.dtd" >
-<dialog id="accountManager" 
-        windowtype="mailnews:accountmanager"
+<!DOCTYPE window SYSTEM "chrome://messenger/locale/AccountManager.dtd" >
+
+<!-- The following lines are taken nearly verbatimly from
+     comm-central/mailnews/base/prefs/content/AccountManager.xul.
+     The code duplication is necessary to make this an <iframe>
+     friendly <page> rather than a <dialog>.  Of course this is less
+     than ideal, but I know of no other way for now.  -->
+<window id="accountManager" 
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         title="&accountManagerTitle.label;"
         style="&accountManager.size;"
-        persist="screenX screenY"
-        buttons="accept,cancel"
-        onload="onLoad(event);"
-        onunload="onUnload();"
-        ondialogaccept="return onAccept();">
+        onload="this.top.frames['contentFrame']=this.document.getElementById('contentFrame').contentWindow; onLoad(event);"
+        onunload="onUnload();">
 <stringbundle id="bundle_brand" src="chrome://branding/locale/brand.properties"/>
 <stringbundle id="bundle_prefs" src="chrome://messenger/locale/prefs.properties"/>
 <script type="application/javascript" src="chrome://messenger/content/amUtils.js"/>
@@ -31,7 +33,6 @@
         <treechildren id="account-tree-children"/>
       </tree>
 
-#ifdef MOZ_THUNDERBIRD
       <button id="accountActionsButton" type="menu"
               label="&accountActionsButton.label;"
               accesskey="&accountActionsButton.accesskey;">
@@ -60,19 +61,25 @@
                     oncommand="onRemoveAccount(event); event.stopPropagation();"/>
         </menupopup>
       </button>
-#else
-      <button label="&addAccountButton.label;" oncommand="onAddAccount(event);" id="addAccountButton"
-              prefstring="mail.disable_new_account_addition"
-              accesskey="&addAccountButton.accesskey;"/>
-      <button label="&setDefaultButton.label;" oncommand="onSetDefault(event);" disabled="true" id="setDefaultButton"
-              prefstring="mail.disable_button.set_default_account"
-              accesskey="&setDefaultButton.accesskey;"/>
-      <button disabled="true" label="&removeButton.label;" oncommand="onRemoveAccount(event);" id="removeButton"
-              prefstring="mail.disable_button.delete_account"
-              accesskey="&removeButton.accesskey;"/>
-#endif
     </vbox>
 
     <iframe id="contentFrame" name="contentFrame" flex="1"/>
   </hbox>
-</dialog>
+
+
+  <!-- New stuff -->
+
+  <separator class="thin"/>
+
+  <!-- XXX TODO Ideally this button would be unnecessary, changes
+       would be saved upon leaving this prefpane and/or closing the
+       preferences dialog -->
+  <hbox align="center">
+    <spacer flex="1"/>
+    <!-- XXX TODO label, accesskey -->
+    <button id="accountAcceptButton"
+            label="Save"
+            oncommand="onAccept();" />
+  </hbox>
+
+</window>
