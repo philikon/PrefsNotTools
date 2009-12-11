@@ -1,0 +1,15 @@
+* Move 'Preferences' to File menu on non-Mac systems... maybe.
+
+* Better icons (the add-ons one is nice but seems to do something to
+  the tab header bar background)
+
+* Something's funny going on with the Preference window size,
+  depending on whether one of the new prefpanes are selected upon
+  opening of the dialog or not.
+
+* Would be nice to remove the 'Account settings' menu item in the
+  message composer window as well, but it seems they forgot in
+  comm-central/mail/components/compose/content/messengercompose.xul to
+  give this menu item an ID :(
+
+* Get rid of the 'Save' button in the Accounts preference tab.
