@@ -1,3 +1,6 @@
+This add-on scratches an itch.  It doesn't add new functionality, it
+just streamlines.
+
 Like in many applications these days, the 'Tools' menu is a misnomer:
 it often contains essential and not just auxiliary functionality.
 Thunderbird is particularly hopeless in this respect, as it not only
