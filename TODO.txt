@@ -3,6 +3,10 @@
 * Better icons (the add-ons one is nice but seems to do something to
   the tab header bar background)
 
+* The tabs in the Add-ons prefpane look like they're disabled.  Also
+  their general appearance should be changed to match the tabs in
+  other prefpanes.
+
 * Something's funny going on with the Preference window size,
   depending on whether one of the new prefpanes are selected upon
   opening of the dialog or not.
