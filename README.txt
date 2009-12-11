@@ -10,7 +10,8 @@ application's settings should really be part of the general
 'Preferences' dialog.  That way they will also be available under the
 common shortcut for invoking the 'Preferences' dialog.
 
-This Thunderbird extension fixes all this.
+This Thunderbird extension fixes all this.  Well, for now at least the
+latter.
 
 Most of the code in this extension is taken from Mozilla projects and
 (c) their contributors.  Thus this extension is released under the
