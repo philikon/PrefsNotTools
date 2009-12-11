@@ -7,7 +7,7 @@
     <em:version>1.0</em:version>
     <em:creator>Philipp von Weitershausen</em:creator>
     <em:contributor></em:contributor>
-    <em:description>Moves stuff that's really about settings from the 'Tools' menu to the Preferences dialog.</em:description>
+    <em:description>Moves stuff that's really about settings from the 'Tools' menu to the 'Preferences' dialog.</em:description>
     <em:aboutURL>chrome://PrefsNotTools/content/about.xul</em:aboutURL>
     <em:optionsURL>chrome://PrefsNotTools/content/options.xul</em:optionsURL>
     <em:targetApplication>
